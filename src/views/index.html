@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>
+    Gemak
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!------incluir cabezera navegacion----->
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--<link rel="icon" type="image/ico" href="/src/public/icon/Gemak.ico" />-->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+  <script type="text/javascript" src="js/Encuesta.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!--<div>
+    <img src="images/Gemak-Mini.png" class="rounded float-left" alt="...">
+  </div>
+  <br />-->
+    <!--================================================== CABEZERA ==================================================================-->
+    <section class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">IDENTIFICACIÓN Y ANÁLISIS DE LOS F.R.P Y EVALUACIÓN DEL
+          ENTORNO ORGANIZACIONAL EN EL CENTROS DE TRABAJO
+        </h1>
+        <p class="text-center">GEMAK SA de CV</p>
+      </div>
+    </section>
+    <hr>
+    <form action="" id="Formualario">
+      <section class="row">
+        <section class="col-md-12">
+          <section class="row">
+          </section>
+          <section class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Nombre">Nombre Completo: *</label>
+                <input type="text" class="form-control" id="Nombre" maxlength="128" placeholder="Nombre Completo"
+                  required>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form_group">
+                <label for="nomina">No. Nómina: *</label>
+                <input type="number" class="form-control" id="Nomina" placeholder="Número de nómina" maxlength="15"
+                  required />
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <label for="Planta">Planta</label>
+              <select id="Planta" class="form-control">
+                <option>Bravo</option>
+                <option>Morelos</option>
+              </select>
+            </div>
+          </section>
+        </section>
+      </section>
+      <hr />
+
+      <!--================================================== Pregunta 1 ==================================================================-->
+      <p class="text-justify">
+        Los datos recabados en esta encuesta serán tratados de manera estrictamente confidencial y cuidando la
+        privacidad del encuestado, los resultados son exclusivamente para fines de mejora del ambiente de trabajo.
+        Instrucciones:
+        No existen respuestas correctas o incorrectas.
+        Es necesaria su total concentración
+        Contesta el cuestionario completamente
+        En tus respuestas, es necesario considerar las condiciones de los últimos dos meses
+        Tu opinión es lo más importante, por lo que se te pide contestes con sinceridad
+        Cada pregunta tiene una opción de respuesta, selecciona una opción con la que más te identifiques.
+      </p>
+
+
+
+      <hr />
+      <div>
+        <p class="lead">
+          * Para responder las preguntas siguientes considere las condiciones ambientales de su centro de trabajo
+        </p>
+        <!--============================================ SECCION DE PREGUNTAS ========================================================-->
+        <!--================================================== Pregunta 1 ============================================================-->
+        <section class="row">
+          <div class="col-md-6">
+            <p>1- El espacio donde trabajo me permite realizar mis actividades de manera segura e higiénica.</p>
+          </div>
+          <div class="col-md-1 m-6">
+            <label class="radio">
+              <input type="radio" name="pregunta1" id="pregunta1a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-6">
+            <label class="radio">
+              <input type="radio" name="pregunta1" id="pregunta1b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-6">
+            <label class="radio">
+              <input type="radio" name="pregunta1" id="pregunta1c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta1" id="pregunta1d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta1" id="pregunta2e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+
+
+        <!--================================================== Pregunta 2 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>2- Mi trabajo me exige hacer mucho esfuerzo físico.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta2" id="pregunta2a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta2" id="pregunta2b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta2" id="pregunta2c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta2" id="pregunta2d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta2" id="pregunta2e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 3 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>3- Me preocupa sufrir un accidente en mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta3" id="pregunta3a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta3" id="pregunta3b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta3" id="pregunta3c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta3" id="pregunta3d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta3" id="pregunta3e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 4 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>4- Considero que en mi trabajo se aplican las normas de seguridad y salud en el trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta4" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta4" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta4" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta4" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta4" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 5 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>5- Considero que las actividades que realizo son peligrosas.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta5" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta5" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta5" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta5" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta5" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <hr>
+        <!--================================================== Pregunta 6 ============================================================-->
+        <p class="lead">
+          * Para responder a las preguntas siguientes piense en la cantidad y ritmo de trabajo que tiene.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>6- Considero que las actividades que realizo son peligrosas.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 7 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>7- Por la cantidad de trabajo que tengo debo quedarme tiempo adicional a mi turno.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta6" id="pregunta5e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 8 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>8- Por la cantidad de trabajo que tengo debo trabajar sin parar.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta8" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta8" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta8" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta8" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta8" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <hr>
+        <!--================================================== Pregunta 9 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con el esfuerzo mental que le exige su trabajo.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>9- Por la cantidad de trabajo que tengo debo quedarme tiempo adicional a mi turno.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta9" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta9" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta9" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta9" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta9" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 10 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>10- Mi trabajo requiere que memorice mucha información.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta10" id="pregunta5a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta10" id="pregunta5b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta10" id="pregunta5c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta10" id="pregunta5d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta10" id="pregunta5e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 11 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>11- En mi trabajo tengo que tomar decisiones difíciles muy rápido.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta11" id="pregunta5a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta11" id="pregunta5b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta11" id="pregunta5c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta11" id="pregunta5d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta11" id="pregunta5e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 12 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>12- Mi trabajo exige que atienda varios asuntos al mismo tiempo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta12" id="pregunta5a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta12" id="pregunta5b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta12" id="pregunta5c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta12" id="pregunta5d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta12" id="pregunta5e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr  />
+
+        <!--================================================== Pregunta 13 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con el esfuerzo mental que le exige su trabajo.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>13- Por la cantidad de trabajo que tengo debo quedarme tiempo adicional a mi turno.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta13" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta13" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta13" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta13" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta13" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 14 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>14- Respondo ante mi jefe por los resultados de toda mi área de trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta14" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta14" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta14" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta14" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta14" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 15 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>15- En el trabajo me dan órdenes contradictorias.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta15" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta15" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta15" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta15" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta15" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 16 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>16- Considero que en mi trabajo me piden hacer cosas innecesarias.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta16" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta16" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta16" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta16" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta16" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr/>
+
+        <!--================================================== Pregunta 17 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con su jornada de trabajo.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>17- Trabajo horas extras más de tres veces a la semana.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta17" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta17" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta17" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta17" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta17" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 18 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>18- Mi trabajo me exige laborar en días de descanso, festivos o fines de semana.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta18" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta18" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta18" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta18" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta18" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 19 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>19- Considero que el tiempo en el trabajo es mucho y perjudica mis actividades familiares o personales.
+            </p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta19" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta19" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta19" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta19" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta19" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 20 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>20- Debo atender asuntos de trabajo cuando estoy en casa.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta20" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta20" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta20" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta20" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta20" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 21 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>21- Pienso en las actividades familiares o personales cuando estoy en mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta21" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta21" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta21" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta21" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta21" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 22 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>22- Pienso que mis responsabilidades familiares afectan mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta22" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta22" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta22" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta22" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta22" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr />
+        <!--================================================== Pregunta 23 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con las decisiones que puede tomar en su trabajo..
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>23- Mi trabajo permite que desarrolle nuevas habilidades.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta23" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta23" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta23" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta23" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta23" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 24 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>24- En mi trabajo puedo aspirar a un mejor puesto.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta24" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta24" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta24" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta24" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta24" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 25 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>25- Durante mi jornada de trabajo puedo tomar pausas cuando las necesito.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta25" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta25" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta25" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta25" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta25" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 26 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>26- Puedo decidir cuánto trabajo realizo durante la jornada laboral.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta26" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta26" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta26" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta26" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta26" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 27 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>27- Puedo decidir la velocidad a la que realizo mis actividades en mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta27" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta27" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta27" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta27" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta27" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 28 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>28- Puedo cambiar el orden de las actividades que realizo en mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta28" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta28" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta28" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta28" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta28" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr />
+        <!--================================================== Pregunta 29 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con cualquier tipo de cambio que ocurra en su trabajo (considere
+          los últimos cambios realizados).
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>29- Los cambios que se presentan en mi trabajo dificultan mi labor.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta29" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta29" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta29" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta29" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta29" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 30 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>30- Cuando se presentan cambios en mi trabajo se tienen en cuenta mis ideas o aportaciones.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta30" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta30" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta30" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta30" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta30" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr />
+        <!--================================================== Pregunta 31 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con la capacitación e información que se le proporciona sobre su
+          trabajo.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>31- Me informan con claridad cuáles son mis funciones.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta31" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta31" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta31" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta31" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta31" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 32 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>32- Me explican claramente los resultados que debo obtener en mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta32" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta32" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta32" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta32" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta32" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 33 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>33- Me explican claramente los objetivos de mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta33" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta33" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta33" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta33" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta33" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 34 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>34- Me informan con quién puedo resolver problemas o asuntos de trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta34" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta34" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta34" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta34" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta34" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 35 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>35- Me permiten asistir a capacitaciones relacionadas con mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta35" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta35" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta35" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta35" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta35" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 36 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>36- Recibo capacitación útil para hacer mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta36" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta36" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta36" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta36" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta36" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr />
+        <!--================================================== Pregunta 37 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con el o los jefes con quien tiene contacto.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>37- Mi jefe ayuda a organizar mejor el trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta37" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta37" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta37" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta37" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta37" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 38 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>38- Mi jefe tiene en cuenta mis puntos de vista y opiniones.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta38" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta38" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta38" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta38" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta38" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 39 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>39- Mi jefe me comunica a tiempo la información relacionada con el trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta39" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta39" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta39" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta39" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta39" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 40 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>40- La orientación que me da mi jefe me ayuda a realizar mejor mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta40" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta40" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta40" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta40" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta40" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 41 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>41- Mi jefe ayuda a solucionar los problemas que se presentan en el trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta41" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta41" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta41" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta41" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta41" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr />
+        <!--================================================== Pregunta 42 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes se refieren a las relaciones con sus compañeros.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>42- Puedo confiar en mis compañeros de trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta42" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta42" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta42" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta42" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta42" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 43 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>43- Entre compañeros solucionamos los problemas de trabajo de forma respetuosa.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta43" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta43" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta43" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta43" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta43" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 44 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>44- En mi trabajo me hacen sentir parte del grupo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta44" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta44" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta44" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta44" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta44" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 45 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>45- Cuando tenemos que realizar trabajo de equipo los compañeros colaboran.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta45" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta45" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta45" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta45" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta45" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 46 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>46- Mis compañeros de trabajo me ayudan cuando tengo dificultades.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta46" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta46" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta46" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta46" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta46" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr />
+        <!--================================================== Pregunta 47 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con la información que recibe sobre su rendimiento en
+          el trabajo, el reconocimiento, el sentido de pertenencia y la estabilidad que le ofrece su trabajo.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>47- Me informan sobre lo que hago bien en mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta47" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta47" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta47" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta47" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta47" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 48 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>48- La forma como evalúan mi trabajo en mi centro de trabajo me ayuda a mejorar mi desempeño.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta48" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta48" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta48" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta48" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta48" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 49 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>49- En mi centro de trabajo me pagan a tiempo mi salario.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta49" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta49" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta49" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta49" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta49" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 50 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>50- El pago que recibo es el que merezco por el trabajo que realizo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta50" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta50" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta50" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta50" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta50" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 51 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>51- Si obtengo los resultados esperados en mi trabajo me recompensan o reconocen.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta51" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta51" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta51" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta51" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta51" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 52 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>52- Las personas que hacen bien el trabajo pueden crecer laboralmente.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta52" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta52" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta52" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta52" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta52" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 53 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>53- Considero que mi trabajo es estable.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta53" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta53" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta53" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta53" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta53" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 54 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>54- En mi trabajo existe continua rotación de personal.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta54" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta54" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta54" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta54" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta54" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 55 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>55- Siento orgullo de laborar en este centro de trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta55" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta55" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta55" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta55" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta55" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 56 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>56- Me siento comprometido con mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta56" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta56" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta56" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta56" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta56" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr />
+        <!--================================================== Pregunta 57 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con actos de violencia laboral (malos tratos,
+          acoso, hostigamiento, acoso psicológico).
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>57- En mi trabajo puedo expresarme libremente sin interrupciones.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta57" id="pregunta4a" value="0" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta57" id="pregunta4b" value="1" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta57" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta57" id="pregunta4d" value="3" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta57" id="pregunta4e" value="4" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 58 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>58- Recibo críticas constantes a mi persona y/o trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta58" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta58" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta58" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta58" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta58" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 59 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>59- Recibo burlas, calumnias, difamaciones, humillaciones o ridiculizaciones.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta59" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta59" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta59" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta59" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta59" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 60 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>60- Se ignora mi presencia o se me excluye de las reuniones de trabajo y en la toma de decisiones.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta60" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta60" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta60" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta60" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta60" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 61 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>61- Se manipulan las situaciones de trabajo para hacerme parecer un mal trabajador.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta61" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta61" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta61" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta61" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta61" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 62 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>62- Se ignoran mis éxitos laborales y se atribuyen a otros trabajadores.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta62" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta62" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta62" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta62" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta62" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 63 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>63- Me bloquean o impiden las oportunidades que tengo para obtener ascenso o mejora en mi trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta63" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta63" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta63" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta63" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta63" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+
+        <!--================================================== Pregunta 64 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>64- He presenciado actos de violencia en mi centro de trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta64" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta64" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta64" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta64" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta64" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr  />
+
+        <!--================================================== Pregunta 64-5 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con la atención a clientes y usuarios.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>En mi trabajo debo brindar servicio a clientes o usuarios:</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta64-5" id="pregunta4a" value="Si" required> Si
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta64-5" id="pregunta4b" value="No" required> No
+            </label>
+          </div>
+
+        </section>
+        <br>
+        <!--================================================== Pregunta 65 ============================================================-->
+        <p class="lead">
+          * Si su respuesta fue "SÍ", responda las preguntas siguientes. Si su respuesta fue "NO" pase a las
+          preguntas de la sección siguiente.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>65- Atiendo clientes o usuarios muy enojados.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta65" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta65" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta65" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta65" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta65" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 66 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>66- Mi trabajo me exige atender personas muy necesitadas de ayuda o enfermas.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta66" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta66" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta66" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta66" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta66" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 67 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>67- Para hacer mi trabajo debo demostrar sentimientos distintos a los míos.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta67" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta67" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta67" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta67" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta67" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 68 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>68- Mi trabajo me exige atender situaciones de violencia.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta68" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta68" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta68" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta68" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta68" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <hr  />
+
+        <!--================================================== Pregunta 68-5 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>Soy jefe de otros trabajadores:.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta68-5" id="pregunta4a" value="Si" required> Si </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta68-5" id="pregunta4b" value="No" required> No
+            </label>
+          </div>
+
+        </section>
+        <br>
+        <!--================================================== Pregunta 69 ============================================================-->
+        <p class="lead">
+          * Las preguntas siguientes están relacionadas con las actitudes de las personas que supervisa.
+        </p>
+        <section class="row">
+          <div class="col-md-3">
+            <p>69- Comunican tarde los asuntos de trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta69" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta69" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta69" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta69" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta69" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 70 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>70- Dificultan el logro de los resultados del trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta70" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta70" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta70" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta70" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta70" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 71 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>71- Cooperan poco cuando se necesita.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta71" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta71" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta71" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta71" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta71" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+        <!--================================================== Pregunta 72 ============================================================-->
+        <section class="row">
+          <div class="col-md-3">
+            <p>72- Ignoran las sugerencias para mejorar su trabajo.</p>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta72" id="pregunta4a" value="4" required> Siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta72" id="pregunta4b" value="3" required> Casi siempre
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta72" id="pregunta4c" value="2" required> Algunas veces
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta72" id="pregunta4d" value="1" required> Casi nunca
+            </label>
+          </div>
+          <div class="col-md-1 m-3">
+            <label class="radio">
+              <input type="radio" name="pregunta72" id="pregunta4e" value="0" required> Nunca
+            </label>
+          </div>
+        </section>
+        <br>
+
+
+
+
+
+
+
+      </div>
+      <!--==== SECCION DE PREGUNTAS ====-->
+    </form>
+  </div>
+</body>
+
+</html>
