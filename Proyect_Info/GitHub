@@ -7,7 +7,7 @@ git status >> Muestra el estado de los archivos
 git add >> Agrega archivos para ser gestionados (add index.html o  add .)
 git commit -m "Mensaje" >> Crea un primer punto de control del codigo 
 git remote add origin https://github.com/MalwarePig/EncuestaISO.git
-git push origin master (envia el proyecto al servidor)
+git push origin master --force (envia el proyecto al servidor)
 ================================= COMANDOS GIT HERRAMIENTAS ==============================
 git checkout -- index.html (Regresa a la version anterior el archivo modificado)
 git diff index.html (Muestra las cambios entre versiones)
