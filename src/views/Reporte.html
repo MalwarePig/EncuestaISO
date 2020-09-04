@@ -16,45 +16,107 @@
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 </head>
 
 <body>
   <!-- -->
   <div class="container-fluid">
-    <div class="card">
-      <div class="card-header">
-        Ambiente de trabajo
+    <!--================================================== CABEZERA ==================================================================-->
+    <section class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">IDENTIFICACIÓN Y ANÁLISIS DE LOS F.R.P Y EVALUACIÓN DEL
+          ENTORNO ORGANIZACIONAL EN EL CENTROS DE TRABAJO
+        </h1>
+        <p class="text-center">GEMAK SA de CV</p>
       </div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>Condiciones en el ambiente de trabajo</p>
-          <footer class="blockquote-footer">Condiciones peligrosas e inseguras <cite title="Source Title">8</cite>
-          </footer>
-        </blockquote>
+    </section>
+    <hr>
+    <form action="" id="Formualario">
+      <section class="row">
+        <section class="col-md-12">
+          <section class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="Nombre">Nombre Completo</label>
+                <input type="text" class="form-control" id="Nombre" maxlength="128" placeholder="Nombre Completo"
+                  required value="Sergio Osvaldo Magaña Gonzalez">
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form_group">
+                <label for="nomina">No. Nómina</label>
+                <input type="text" class="form-control" id="Nomina" placeholder="Número de nómina" maxlength="15"
+                  required value="285" />
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form_group">
+                <label for="Planta">No. Nómina</label>
+                <input type="text" class="form-control" id="Planta" placeholder="Planta" maxlength="15" required
+                  value="Morelos" />
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <!--FULL-->
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-header text-white bg-dark">
+            Ambiente de trabajo
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Condiciones en el ambiente de trabajo</p>
+              <hr>
+              <footer class="blockquote-footer">Condiciones peligrosas e inseguras <cite title="Source Title">8</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- -->
-  <hr>
-  <div class="container-fluid">
-    <div class="card">
-      <div class="card-header">
-        Condiciones deficientes e insalubres
+
+      <!-- -->
+      <hr>
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-header text-white bg-dark">
+            Condiciones deficientes e insalubres
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Total: 5</p>
+            </blockquote>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>Total: 5</p>
-        </blockquote>
+
+      <!-- -->
+      <hr>
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-header text-white bg-dark">
+            Trabajos peligrosos
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Total: 5</p>
+            </blockquote>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+
+  </div> <!-- div -->
 
 </body>
