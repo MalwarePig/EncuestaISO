@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        GEMAK
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+</head>
+
+<body>
+    <!-- -->
+    <div class="container-fluid">
+        <!--================================================== CABEZERA ==================================================================-->
+        <div class="p-3">
+            <section class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">IDENTIFICACIÓN Y ANÁLISIS DE LOS F.R.P Y EVALUACIÓN DEL
+                        ENTORNO ORGANIZACIONAL EN EL CENTROS DE TRABAJO
+                    </h1>
+                    <p class="text-center">GEMAK SA de CV</p>
+                </div>
+            </section>
+        </div>
+        <br>
+        <!--===================== TABLA =====================================-->
+        <div>
+            <table class="table table-condensed table-hover" id="TablaCategoria">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Dominio</th>
+                        <th>Dimensión</th>
+                        <th>Calificación</th>
+                        <th>Criterio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="Categoria">Ambiente de trabajo</td>
+                        <td id="Dominio">Condiciones en el ambiente de trabajo</td>
+                        <td id="Dimensión">Condiciones peligrosas e inseguras</td>
+                        <td id="Calificación">20</td>
+                        <td id="Criterio">Nulo o despreciable</td>
+                    </tr>
+                    <tr>
+                        <td id="Categoria">Condiciones deficientes e insalubres</td>
+                        <td id="Calificación">-</td>
+                        <td id="Calificación">-</td>
+                        <td id="Calificación">25</td>
+                        <td id="Criterio">Nulo o despreciable</td>
+                    </tr>
+                    <tr>
+                        <td id="Categoria">Trabajos peligrosos</td>
+                        <td id="Calificación">-</td>
+                        <td id="Calificación">-</td>
+                        <td id="Calificación">25</td>
+                        <td id="Criterio">Nulo o despreciable</td>
+                    </tr>
+                    <tr>
+                        <td id="Categoria">Factores propios de la actividad</td>
+                        <td id="Calificación">Carga de trabajo</td>
+                        <td id="Calificación">Cargas cuantitativas</td>
+                        <td id="Calificación">30</td>
+                        <td id="Criterio">Nulo o despreciable</td>
+                    </tr>
+                    <tr>
+                        <td id="Categoria">Factores propios de la actividad</td>
+                        <td id="Calificación">Carga de trabajo</td>
+                        <td id="Calificación">Ritmos de trabajo acelerado</td>
+                        <td id="Calificación">30</td>
+                        <td id="Criterio">Nulo o despreciable</td>
+                    </tr>
+                    <tr>
+                        <td id="Categoria">Factores propios de la actividad</td>
+                        <td id="Calificación">Carga de trabajo</td>
+                        <td id="Calificación">Carga mental</td>
+                        <td id="Calificación">30</td>
+                        <td id="Criterio">Nulo o despreciable</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <hr />
+            <!-- <button type="button" class="btn btn-secondary" onclick="GuardarNota()" data-target="#exampleModal"
+          data-toggle="modal">Registrar</button>-->
+        </div>
+        <!--================================================== DATOS PERSONALES ==========================================================-->
+        <!--=== ===-->
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-dark"> Ambiente de trabajo <span>- Total:
+                    8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-secondary">Condiciones en el ambiente de
+                trabajo <span>- Total: 8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light">Condiciones peligrosas e
+                inseguras<span>- Total: 8 [Nulo o despreciable]</span></li>
+        </ul>
+        <hr>
+        <!--=== ===-->
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-dark"> Condiciones deficientes e
+                insalubres <span>- Total: 8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light"><span> Total: 8 [Nulo o
+                    despreciable]</span></li>
+        </ul>
+        <hr>
+        <!--=== ===-->
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-dark"> Trabajos peligrosos <span>- Total:
+                    8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light"><span>- Total: 8 [Nulo o
+                    despreciable]</span></li>
+        </ul>
+        <hr>
+        <!--=== ===-->
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-dark"> Factores propios de la
+                actividad<span>- Total: 8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-secondary">Carga de trabajo <span>- Total:
+                    8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light">Cargas cuantitativas<span>- Total:
+                    8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light">Ritmos de trabajo acelerado<span>-
+                    Total: 8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light">Carga mental<span>- Total: 8 [Nulo
+                    o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light">Cargas psicológicas
+                emocionales<span>- Total: 8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light">Cargas de alta
+                responsabilidad<span>- Total: 8 [Nulo o despreciable]</span></li>
+            <li class="list-group-item list-group-item-action list-group-item-light">Cargas contradictorias o
+                inconsistentes<span>- Total: 8 [Nulo o despreciable]</span></li>
+        </ul>
+        <hr>
+
+    </div><!-- container-fluid -->
+</body>
+
+</html>
