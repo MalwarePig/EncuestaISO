@@ -85,10 +85,10 @@
                 </tr>
                 <!-- -->
                 <tr>
-                    <td >Ambiente de trabajo</td>
+                    <td>Ambiente de trabajo</td>
                     <td>Condiciones en el ambiente de trabajo</td>
                     <td>Condiciones peligrosas e inseguras</td>
-                    <td>##</th>
+                    <td id="Ambiente"></td>
                 </tr>
                 <!-- -->
                 <tr>
@@ -142,18 +142,18 @@
                     <td>Falta de control y autonomía sobre el trabajo</td>
                     <td>##</td>
                 </tr>
-                 <!-- -->
-                 <tr>
+                <!-- -->
+                <tr>
                     <td>Limitada o nula posibilidad de desarrollo</td>
                     <td>##</td>
                 </tr>
-                 <!-- -->
-                 <tr>
+                <!-- -->
+                <tr>
                     <td>Insuficiente participación y manejo del cambio</td>
                     <td>##</td>
                 </tr>
-                 <!-- -->
-                 <tr>
+                <!-- -->
+                <tr>
                     <td>Limitada o inexistente capacitación</td>
                     <td>##</td>
                 </tr>
@@ -171,7 +171,7 @@
                 </tr>
                 <!-- -->
                 <tr>
-                    <td >Interferencia en la relación trabajo-familia</td>
+                    <td>Interferencia en la relación trabajo-familia</td>
                     <td>Influencia de las responsabilidades familiares</td>
                     <td>##</td>
                 </tr>
@@ -193,8 +193,8 @@
                     <td>Relaciones sociales en el trabajo</td>
                     <td>##</td>
                 </tr>
-                 <!-- -->
-                 <tr>
+                <!-- -->
+                <tr>
                     <td>Deficiente relación con los colaboradores que supervisa</td>
                     <td>##</td>
                 </tr>
@@ -229,8 +229,17 @@
                 </tr>
             </table>
         </div>
-        
+
     </div>
     <!--Fluid-->
+
+    <script>
+        //Se obtiene el nodo
+        var Nodo = document.getElementById("Ambiente");
+        //se crea texto para el nodo
+        var newText = document.createTextNode(564);
+        //se inserta el valor al nodo
+        Nodo.appendChild(newText);
+    </script>
 
 </body>

@@ -17,11 +17,11 @@ app.set('view engine', 'ejs');//motor de plantillas, permite ejecutar javascript
 app.use(express.json());//Acceder a la informacion de jason
 app.use(morgan('dev'));//muestra los mensajes en consola de las cargas y peticiones
 app.use(myConnection(mysql,{
-     host:'bpui8m1t3pulemi4dlfv-mysql.services.clever-cloud.com',
-     user: 'u7xoomeqcazzaq57',
-     password: 'nciIFmnLngqjuKcoB5LW',
+     host:'localhost',
+     user: 'root',
+     password: 'Soporte1702861',
      port: 3306,
-     database: 'bpui8m1t3pulemi4dlfv'
+     database: 'encuestaiso'
 }, 'single'))
 
 app.use(session({
