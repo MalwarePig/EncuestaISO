@@ -24,9 +24,10 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script type="text/javascript" src="js/Reporte.js"></script>
 </head>
 
-<body>
+<body onload="Tabla()">
     <div class="container-fluid">
         <!--================================================== CABEZERA ==================================================================-->
         <div class="p-3">
@@ -85,62 +86,62 @@
                 </tr>
                 <!-- -->
                 <tr>
-                    <td>Ambiente de trabajo</td>
+                    <td>Ambiente de trabajo <span id="Cat1"></span></td>
                     <td>Condiciones en el ambiente de trabajo</td>
                     <td>Condiciones peligrosas e inseguras</td>
-                    <td id="Ambiente"></td>
+                    <td><span id="R1"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td>Condiciones deficientes e insalubres</td>
+                    <td>Condiciones deficientes e insalubres <span id="Cat2"></span></td>
                     <td>-</td>
                     <td>-</td>
-                    <td>##</th>
+                    <td><span id="R2"></span></th>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td>Trabajos peligrosos</td>
+                    <td>Trabajos peligrosos <span id="Cat3" ></span></td>
                     <td>-</td>
                     <td>-</td>
-                    <td>##</td>
+                    <td><span id="R3"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td rowspan="10">Factores propios de la actividad</td>
-                    <td rowspan="6">Carga de trabajo</td>
-                    <td>Cargas cuantitativas</td>
-                    <td>##</td>
+                    <td rowspan="10">Factores propios de la actividad <span id="Cat4"></span></td>
+                    <td rowspan="6">Carga de trabajo <span id="Dom2"></span></td>
+                    <td>Cargas cuantitativas <span id="Dim2"></span></td>
+                    <td><span id="R4"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td>Ritmos de trabajo acelerado</td>
-                    <td>##</td>
+                    <td>Ritmos de trabajo acelerado <span id="Dim3"></span></td>
+                    <td><span id="R5"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td>Carga mental</td>
-                    <td>##</td>
+                    <td>Carga mental <span id="Dim4"></span></td>
+                    <td><span id="R6"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td>Cargas psicológicas emocionales</td>
-                    <td>##</td>
+                    <td>Cargas psicológicas emocionales <span id="Dim5"></span></td>
+                    <td><span id="R7"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td>Cargas de alta responsabilidad</td>
-                    <td>##</td>
+                    <td>Cargas de alta responsabilidad <span id="Dim6"></span></td>
+                    <td><span id="R8"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td>Cargas contradictorias o inconsistentes</td>
-                    <td>##</td>
+                    <td>Cargas contradictorias o inconsistentes <span id="Dim7"></span></td>
+                    <td><span id="R9"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
-                    <td rowspan="4">Falta de control sobre el trabajo</td>
-                    <td>Falta de control y autonomía sobre el trabajo</td>
-                    <td>##</td>
+                    <td rowspan="4">Falta de control sobre el trabajo <span id="Dom3"></span></td>
+                    <td>Falta de control y autonomía sobre el trabajo <span id="Dim8"></span></td>
+                    <td><span id="R10"></span></td>
                 </tr>
                 <!-- -->
                 <tr>
@@ -232,14 +233,5 @@
 
     </div>
     <!--Fluid-->
-
-    <script>
-        //Se obtiene el nodo
-        var Nodo = document.getElementById("Ambiente");
-        //se crea texto para el nodo
-        var newText = document.createTextNode(564);
-        //se inserta el valor al nodo
-        Nodo.appendChild(newText);
-    </script>
 
 </body>
