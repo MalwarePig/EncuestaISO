@@ -1,22 +1,6 @@
 const Controller = {};
 const express = require('express'); //guardar express en una variable de servidor
 
-//SELECT
-Controller.TablaM = (req, res) => {
-    //res.send('Metodo Get list');
-    req.getConnection((err, conn) => {
-        conn.query("SELECT * FROM Encuesta WHERE Planta = 'Morelos' order by Aceptable,Nomina", (err, datos) => {
-            if (err) {
-                res.json(err);
-                console.log('Error de lectura');
-            }
-            res.render('Rep_Gemak.html', {
-                data: datos,
-            });
-        });
-    });
-};
-
 
 //INSERT
 Controller.GuardarEncuesta = (req, res) => {
@@ -43,4 +27,25 @@ Controller.GuardarEncuesta = (req, res) => {
     });
 };
 
+
+
+///////// == Empleado == ////////////////////////////// == Empleado == ////////////////////////////// == Empleado == ////////////////////////// == Empleado == //////////////////// == Empleado == 
+Controller.search = (req, res) => {
+    req.getConnection((err, conn) => {
+
+        const {Nomina} = req.params;
+        conn.query("SELECT * FROM encuesta WHERE Nomina = '"+Nomina+"'", (err, data) => {
+            if (err) {
+                res.json("Error json: " + err);
+                console.log('Error de lectura');
+            }
+            res.json(data)
+            console.log(data);
+        });
+    });
+};
 module.exports = Controller;
+
+
+
+

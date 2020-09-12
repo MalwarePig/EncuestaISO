@@ -14,6 +14,6 @@ router.get('/Reporte', (req, res) => {
 
 
 router.post('/GuardarEncuesta', EncuestaController.GuardarEncuesta);
-router.get('/TablaM/:Variable', EncuestaController.TablaM);
-
+router.get('/Empleado/:Nomina', EncuestaController.search);
+//router.get('/BuscarHerramientas/:Herra', AlmacenController.search);
 module.exports = router;
