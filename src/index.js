@@ -28,7 +28,7 @@ app.use(session({
      secret: 'keyboard cat',
      resave: false,
      saveUninitialized: true
- }))
+ }));
 
 app.use(express.urlencoded({extended: false}));//para que el servidor entienda los datos del navegador al hacer un guardado de formulario
 
@@ -43,3 +43,14 @@ app.listen(app.get('port'),() => {
 
 //file statics
 app.use(express.static(path.join(__dirname, 'public')));//para archivos como imagenes,css,javascript
+
+
+
+
+
+
+
+
+
+
+

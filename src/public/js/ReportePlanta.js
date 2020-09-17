@@ -165,317 +165,208 @@ function Tabla() {
             }
 
 
-            Total = Total + (R1 + R3);
-            //Se obtiene el nodo
-            Arreglo[5] = (R1 + R3);
-            var Nodo = document.getElementById("Cat1");
-            //se crea texto para el nodo
-            var newText = document.createTextNode(R1 + R3);
-            //se inserta el valor al nodo
-            Nodo.appendChild(newText);
-
-            var Dom1 = R1 + R3;
-            Arreglo[12] = Dom1;
-            var Nodo = document.getElementById("Dom1");
-            var newText = document.createTextNode(Dom1);
-            Nodo.appendChild(newText);
-
             // var Nodo = document.getElementById("Dim1");
             // var newText = document.createTextNode(R1+R3);
             // Nodo.appendChild(newText);
-
             var Nodo = document.getElementById("R1");
-            var newText = document.createTextNode(R1 + R3);
-            Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            Total = Total + (R2 + R4);
-            Arreglo[6] = (R2 + R4);
-            var Nodo = document.getElementById("Cat2");
-            var newText = document.createTextNode(R2 + R4);
+            var newText = document.createTextNode(R1+R3);
             Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R2");
-            var newText = document.createTextNode(R2 + R4);
-            Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            Total = Total + R5;
-            Arreglo[7] = (R5);
-            var Nodo = document.getElementById("Cat3");
-            var newText = document.createTextNode(R5);
+            var newText = document.createTextNode(R2+R4);
             Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R3");
             var newText = document.createTextNode(R5);
             Nodo.appendChild(newText);
 
-            /////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim3");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
+            
+            var Dom1 = (R1+R3) + (R2+R4) + R5;
+            Arreglo[10] = Dom1;
+            var Nodo = document.getElementById("Dom1");
+            var newText = document.createTextNode(Dom1);
+            Nodo.appendChild(newText);
+
+            var Cat1 = Arreglo[10];
+            //Se obtiene el nodo
+            Arreglo[5] = (R1+R3);
+            var Nodo = document.getElementById("Cat1");
+            //se crea texto para el nodo
+            var newText = document.createTextNode(Cat1);
+            //se inserta el valor al nodo
+            Nodo.appendChild(newText);
+            //////////////////////////////////////////////////
+            var Nodo = document.getElementById("R4");
+            var newText = document.createTextNode(R6+ R12);
+            Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R5");
-            var newText = document.createTextNode(R7 + R8);
+            var newText = document.createTextNode(R7+ R8);
             Nodo.appendChild(newText);
-            /////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim4");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R6");
             var newText = document.createTextNode(R9 + R10 + R11);
-            Nodo.appendChild(newText);
-            /////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim5");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
+            Nodo.appendChild(newText); 
 
             var Nodo = document.getElementById("R7");
-            var newText = document.createTextNode(R65 + R66 + R67 + R68);
+            var newText = document.createTextNode(R65+ R66 + R67 + R68);
             Nodo.appendChild(newText);
-            /////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim6");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R8");
-            var newText = document.createTextNode(R13 + R14);
+            var newText = document.createTextNode(R13+ R14);
             Nodo.appendChild(newText);
-
-            /////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim7");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R9");
-            var newText = document.createTextNode(R15 + R16);
-            Nodo.appendChild(newText);
-            ////////////////////////////////////////////////
-            var Dom3 = (R25 + R26 + R27 + R28) + (R23 + R24) + (R29 + R30) + (R35 + R36);
-            Arreglo[14] = Dom3;
-            var Nodo = document.getElementById("Dom3");
-            var newText = document.createTextNode(Dom3);
+            var newText = document.createTextNode(R15+ R16);
             Nodo.appendChild(newText);
 
-            // var Nodo = document.getElementById("Dim8");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
+            var Dom2 = (R6+ R12) + (R7+ R8) + (R9 + R10 + R11) + (R65+ R66 + R67 + R68) + (R13+ R14) + (R15+ R16);
+            Arreglo[11] = Dom2;
+            var Nodo = document.getElementById("Dom2");
+            var newText = document.createTextNode(Dom2);
+            Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R10");
             var newText = document.createTextNode(R25 + R26 + R27 + R28);
             Nodo.appendChild(newText);
-            ////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim9");
-            // var newText = document.createTextNode(20);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R11");
             var newText = document.createTextNode(R23 + R24);
             Nodo.appendChild(newText);
 
-            ////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim10");
-            // var newText = document.createTextNode(20);
-            // Nodo.appendChild(newText);
-
             var Nodo = document.getElementById("R12");
-            var newText = document.createTextNode(R29 + R30);
+            var newText = document.createTextNode(R29+ R30);
             Nodo.appendChild(newText);
-
-            ////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim11");
-            // var newText = document.createTextNode(20);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R13");
-            var newText = document.createTextNode(R35 + R36);
-            Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            var Dom2 = (R6 + R12) + (R7 + R8) + (R9 + R10 + R11) + (R65 + R66 + R67 + R68) + (R13 + R14) + (R15 + R16);
-            Arreglo[13] = Dom2;
-            var Nodo = document.getElementById("Dom2");
-            var newText = document.createTextNode(Dom2);
+            var newText = document.createTextNode(R35+ R36);
             Nodo.appendChild(newText);
 
-            var Cat4 = Dom2 + Dom3;
-            Arreglo[8] = Cat4;
-            Total = Total + Cat4;
-            var Nodo = document.getElementById("Cat4");
-            var newText = document.createTextNode(Cat4);
+            var Dom3 = (R25 + R26 + R27 + R28) + (R23 + R24) + (R29+ R30) + (R35+ R36);
+            Arreglo[12] = Dom3;
+            var Nodo = document.getElementById("Dom3");
+            var newText = document.createTextNode(Dom3);
             Nodo.appendChild(newText);
 
-            // var Nodo = document.getElementById("Dim2");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
 
-            var Nodo = document.getElementById("R4");
-            var newText = document.createTextNode(R6 + R12);
+            var Cat2 = Arreglo[11] + Arreglo[12];
+            Arreglo[6] = Cat2;
+            var Nodo = document.getElementById("Cat2");
+            var newText = document.createTextNode(Cat2);
+            Nodo.appendChild(newText);
+ 
+            /////////////////////////////////////////////////
+            var Nodo = document.getElementById("R14");
+            var newText = document.createTextNode(R17+ R18);
             Nodo.appendChild(newText);
 
-            //////////////////////////////////////////////////
-            var Dom4 = (R17 + R18);
-            Arreglo[15] = Dom4;
+            var Dom4 = (R17+ R18);
+            Arreglo[13] = Dom4;
             var Nodo = document.getElementById("Dom4");
             var newText = document.createTextNode(Dom4);
             Nodo.appendChild(newText);
 
-            // var Nodo = document.getElementById("Dim12");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
-
-            var Nodo = document.getElementById("R14");
-            var newText = document.createTextNode(R17 + R18);
+            var Nodo = document.getElementById("R15");
+            var newText = document.createTextNode(R19+ R20);
             Nodo.appendChild(newText);
 
-            ////////////////////////////////////////////////// 
-            var Dom5 = (R19 + R20) + (R21 + R22);
-            Arreglo[16] = Dom5;
+            var Nodo = document.getElementById("R16");
+            var newText = document.createTextNode(R21+ R22);
+            Nodo.appendChild(newText);
+
+            var Dom5 = (R19+ R20) + (R21+ R22);
+            Arreglo[14] = Dom5;
             var Nodo = document.getElementById("Dom5");
             var newText = document.createTextNode(Dom5);
             Nodo.appendChild(newText);
 
-            // var Nodo = document.getElementById("Dim13");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
-
-            var Nodo = document.getElementById("R15");
-            var newText = document.createTextNode(R19 + R20);
+            var Cat3 = Arreglo[13] + Arreglo[14];
+            Arreglo[7] = Cat3;
+            var Nodo = document.getElementById("Cat3");
+            var newText = document.createTextNode(Cat3);
             Nodo.appendChild(newText);
-
-            var Cat5 = Dom4 + Dom5;
-            Arreglo[9] = Cat5;
-            Total = Total + Cat5;
-            var Nodo = document.getElementById("Cat5");
-            var newText = document.createTextNode(Cat5);
-            Nodo.appendChild(newText);
-            //////////////////////////////////////////////////   
-            // var Nodo = document.getElementById("Dim14");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
-
-            var Nodo = document.getElementById("R16");
-            var newText = document.createTextNode(R21 + R22);
-            Nodo.appendChild(newText);
-
-            //////////////////////////////////////////////////
-            var Dom6 = (R31 + R32 + R33 + R34) + (R37 + R38 + R39 + R40 + R41);
-            Arreglo[17] = Dom6;
-            var Nodo = document.getElementById("Dom6");
-            var newText = document.createTextNode(Dom6);
-            Nodo.appendChild(newText);
-
-            // var Nodo = document.getElementById("Dim15");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
-
+            /////////////////////////////////////////////////
             var Nodo = document.getElementById("R17");
             var newText = document.createTextNode(R31 + R32 + R33 + R34);
             Nodo.appendChild(newText);
-            //////////////////////////////////////////////////  
-            // var Nodo = document.getElementById("Dim16");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R18");
             var newText = document.createTextNode(R37 + R38 + R39 + R40 + R41);
             Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            var Dom7 = (R42 + R43 + R44 + R45 + R46) + (R69 + R70 + R71 + R72);
-            Arreglo[18] = Dom7;
-            var Nodo = document.getElementById("Dom7");
-            var newText = document.createTextNode(Dom7);
-            Nodo.appendChild(newText);
 
-            // var Nodo = document.getElementById("Dim17");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
+            var Dom6 = (R31 + R32 + R33 + R34) + (R37 + R38 + R39 + R40 + R41);
+            Arreglo[15] = Dom6;
+            var Nodo = document.getElementById("Dom6");
+            var newText = document.createTextNode(Dom6);
+            Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R19");
             var newText = document.createTextNode(R42 + R43 + R44 + R45 + R46);
             Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim18");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R20");
             var newText = document.createTextNode(R69 + R70 + R71 + R72);
             Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            var Dom8 = (R57 + R58 + R59 + R60 + R61 + R62 + R63 + R64);
-            Arreglo[19] = Dom8;
-            var Nodo = document.getElementById("Dom8");
-            var newText = document.createTextNode(Dom8);
-            Nodo.appendChild(newText);
 
-            // var Nodo = document.getElementById("Dim19");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
+            var Dom7 = (R42 + R43 + R44 + R45 + R46) + (R69 + R70 + R71 + R72);
+            Arreglo[16] = Dom7;
+            var Nodo = document.getElementById("Dom7");
+            var newText = document.createTextNode(Dom7);
+            Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R21");
             var newText = document.createTextNode(R57 + R58 + R59 + R60 + R61 + R62 + R63 + R64);
             Nodo.appendChild(newText);
 
-            var Cat6 = Dom6 + Dom7 + Dom8;
-            Arreglo[10] = Cat6;
-            Total = Total + Cat6;
-            var Nodo = document.getElementById("Cat6");
-            var newText = document.createTextNode(Cat6);
-            Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            var Dom9 = (R47 + R48) + (R49 + R50 + R51 + R52);
-            Arreglo[20] = Dom9;
-            var Nodo = document.getElementById("Dom9");
-            var newText = document.createTextNode(Dom9);
+            var Dom8 = 0;
+            Arreglo[17] = Dom8;
+            var Nodo = document.getElementById("Dom8");
+            var newText = document.createTextNode(Dom8);
             Nodo.appendChild(newText);
 
-            // var Nodo = document.getElementById("Dim20");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
-
+            var Cat4 = Arreglo[15] + Arreglo[16]  + Arreglo[17];
+            Arreglo[8] = Cat4;
+            var Nodo = document.getElementById("Cat4");
+            var newText = document.createTextNode(Cat4);
+            Nodo.appendChild(newText);
+            /////////////////////////////////////////////////   
             var Nodo = document.getElementById("R22");
             var newText = document.createTextNode(R47 + R48);
             Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim21");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R23");
             var newText = document.createTextNode(R49 + R50 + R51 + R52);
             Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            var Dom10 = (R55 + R56) + (R53 + R54);
-            Arreglo[21] = Dom10;
-            var Nodo = document.getElementById("Dom10");
-            var newText = document.createTextNode(Dom10);
+
+            var Dom9 = (R47 + R48) + (R49 + R50 + R51 + R52);
+            Arreglo[18] = Dom9;
+            var Nodo = document.getElementById("Dom9");
+            var newText = document.createTextNode(Dom9);
             Nodo.appendChild(newText);
-
-            // var Nodo = document.getElementById("Dim22");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
-
+            
             var Nodo = document.getElementById("R24");
             var newText = document.createTextNode(R55 + R56);
             Nodo.appendChild(newText);
-            //////////////////////////////////////////////////
-            // var Nodo = document.getElementById("Dim23");
-            // var newText = document.createTextNode(92);
-            // Nodo.appendChild(newText);
 
             var Nodo = document.getElementById("R25");
             var newText = document.createTextNode(R53 + R54);
             Nodo.appendChild(newText);
 
-            var Cat7 = Dom9 + Dom10;
-            Arreglo[11] = Cat7;
-            Total = Total + Cat7;
-            var Nodo = document.getElementById("Cat7");
-            var newText = document.createTextNode(Cat7);
+            var Dom10 = (R55 + R56) + (R53 + R54);
+            Arreglo[19] = Dom10;
+            var Nodo = document.getElementById("Dom10");
+            var newText = document.createTextNode(Dom10);
             Nodo.appendChild(newText);
-
-            Arreglo[4] = (Total);
+            
+            var Cat5 = Arreglo[18] + Arreglo[19];
+            Arreglo[9] = Cat5;
+            var Nodo = document.getElementById("Cat5");
+            var newText = document.createTextNode(Cat5);
+            Nodo.appendChild(newText);
+            ///////////////////////////////////////////////
+            Arreglo[4] = Arreglo[5] + Arreglo[6] + Arreglo[7] + Arreglo[8] + Arreglo[9];
             var Nodo = document.getElementById("Total");
-            var newText = document.createTextNode(Total);
+            var newText = document.createTextNode(Arreglo[4]);
             Nodo.appendChild(newText);
 
         } //Funcion success
