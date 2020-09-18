@@ -1,5 +1,5 @@
 const Controller = {};
-const express = require('express'); //guardar express en una variable de servidor
+//const express = require('express'); //guardar express en una variable de servidor
 
 
 //INSERT
