@@ -79,6 +79,8 @@ Controller.searchArea = (req, res) => {
         });
     });
 };
+
+
 module.exports = Controller;
 
 
