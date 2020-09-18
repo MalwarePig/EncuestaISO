@@ -1,8 +1,8 @@
 const express = require('express');//guardar express en una variable de servidor
 const router = express.Router(); //usar modulo de router de ex´press
-const EncuestaController = require('../Controllers/EncuestaController');
+const EncuestaController = require('../controllers/EncuestaCon');
 
-router.get('/Encuesta', (req, res) => {
+router.get('/', (req, res) => {
     //res.send('holoo');
     res.render('index.html');
 });
