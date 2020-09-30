@@ -499,7 +499,9 @@ function CalcularExcel() {
                 var R72 = data[index].Pregunta72;
 
                 var Dom1 = R1 + R3 + R2 + R4 + R5;
-                var Dom2 = R6 + R12 + R7 + R8 + R9 + R10 + R11 + R65 + R66 + R67 + R68 + R13 + R14;
+                alert("Nomin: " + nomina+"R6: " + R6+" R12: "+ R12  +" R7: "+ R7 + " + R8: "+ R8+ " +R9: "+ R9 +" R10: " + R10 +" R11: " + R11 +" R65: " + R65 +" R66: " + R66 +" R67: " + R67 + " R68: " +R68 + " R13: " +R13 + " R14: " +R14 +" R15: " + R15 + " R16: " +R16);
+                var Dom2 = R6 + R12 + R7 + R8 + R9 + R10 + R11 + R65 + R66 + R67 + R68 + R13 + R14 + R15 + R16;
+                alert(Dom2);
                 var Dom3 = R25 + R26 + R27 + R28 + R23 + R24 + R29 + R30 + R35 + R36;
                 var Dom4 = R17 + R18;
                 var Dom5 = R19 + R20 + R21 + R22;
