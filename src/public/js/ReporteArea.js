@@ -375,35 +375,90 @@ function Tabla() {
 }
 
 function Excel() {
-
-
-    $.ajax({
-        url: "/RArea/" + document.getElementById("Area").value + " " + document.getElementById("Planta").value,
-        success: function (data) {
-
-            var table = data;
-            var wb = XLSX.utils.table_to_book(table, {
-                sheet: "Reporte"
-            });
-            var wbout = XLSX.write(wb, {
-                bookType: 'xlsx',
-                bookSST: true,
-                type: 'binary'
-            });
-
-            function s2ab(s) {
-                var buf = new ArrayBuffer(s.length);
-                var view = new Uint8Array(buf);
-                for (var i = 0; i < s.length; i++) view[i] = s.charCodeAt(i) & 0xFF;
-                return buf;
-            }
-            saveAs(new Blob([s2ab(wbout)], {
-                type: "application/octet-stream"
-            }), 'Reporte_Covid.xlsx');
-        } //Funcion success
-    }); //Ajax
+    var sheet_1_data = [{
+            'Nombre': Arreglo[0],
+            'Nomina': Arreglo[1],
+            'Area': Arreglo[2],
+            'Planta': Arreglo[3],
+            'Total': Arreglo[4],
+            'Ambiente de trabajo': Arreglo[5],
+            'Condiciones deficientes e insalubres': Arreglo[6],
+            'Trabajos peligrosos': Arreglo[7],
+            'Factores propios de la actividad': Arreglo[8],
+            'Organización del tiempo de trabajo': Arreglo[9],
+            'Liderazgo y relaciones en el trabajo': Arreglo[10],
+            'Entorno organizacional': Arreglo[11],
+            'Condiciones en el ambiente de trabajo': Arreglo[12],
+            'Carga de trabajo': Arreglo[13],
+            'Falta de control sobre el trabajo': Arreglo[14],
+            'Jornada de trabajo': Arreglo[15],
+            'Interferencia en la relación trabajo-familia': Arreglo[16],
+            'Liderazgo': Arreglo[17],
+            'Relaciones en el trabajo': Arreglo[18],
+            'Violencia': Arreglo[19],
+            'Reconocimiento del desempeño': Arreglo[20],
+            'Insuficiente sentido de pertenencia e, inestabilidad': Arreglo[21]
+        },
+        /*{Total:2, Subtotal:22}*/
+    ];
+    var sheet_2_data = [{Col_One: 10, Col_Two: 110}, {Col_One: 20,Col_Two: 220}];
+    var opts = [{sheetid: 'Sheet One', header: true }, {sheetid: 'Sheet Two',header: false}];
+    var result = alasql('SELECT * INTO XLSX("sample_file.xlsx",?) FROM ?', [opts, [sheet_1_data, sheet_2_data]]);
 }
 
+
+function ExcelPrueba() {
+    const Array = [];
+
+    const O1 = {
+        Nombre : 'Sergio',
+        Nomina : 564,
+        Area : "admin",
+        Planta : "Bravo"
+    }
+    const O2 = {
+        Nombre : 'Sergio2',
+        Nomina : 5642,
+        Area : "admin2",
+        Planta : "Bravo2"
+    }
+    Array.push(01);
+    Array.push(02);
+
+    console.log(Array[0]);
+    var sheet_1_data = [O1];
+  
+    var opts = [{sheetid: 'Sheet One', header: true }];
+    var result = alasql('SELECT * INTO XLSX("sample_file.xlsx",?) FROM ?', [opts, [sheet_1_data]]);
+}
+
+ function PruebaExitosa(){
+ 
+    const Array = [];
+
+    const a1 = {
+        Nombre : 'Sergio',
+        Nomina : 564,
+        Area : "admin",
+        Planta : "Bravo"
+    }
+
+    const a2 = {
+        Nombre : 'Sergio2',
+        Nomina : 5642,
+        Area : "admin2",
+        Planta : "Bravo2"
+    }
+    Array.push(01);
+    Array.push(02);
+
+    console.log(Array[0]);
+    var sheet_1_data = [];
+    sheet_1_data.push(a2);
+  
+    var opts = [{sheetid: 'Sheet One', header: true }];
+    var result = alasql('SELECT * INTO XLSX("sample_file.xlsx",?) FROM ?', [opts, [sheet_1_data]]);
+ }
 
 function pruebaJason() {
     $.ajax({

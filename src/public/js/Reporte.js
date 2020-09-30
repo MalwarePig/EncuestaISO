@@ -655,7 +655,7 @@ function Valores(valores) {
     }
     Categorias.push(Cal_Dom10);
 
-    //Dominio Total
+    // Total
     var Total = valores[5] + valores[6] + valores[7] + valores[8] + valores[9];
     var Cal_Total = "";
     if (Total < 50) {
@@ -672,5 +672,4 @@ function Valores(valores) {
   
     Categorias.push(Cal_Total);
     return Categorias;
-
 }
