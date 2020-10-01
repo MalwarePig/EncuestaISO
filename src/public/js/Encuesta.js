@@ -1,3 +1,7 @@
+function identificador(){
+	var aleatorio = Math.round(Math.random() * (10000 - 1) + 1);
+	document.getElementById("identificador").value = aleatorio;
+}
 
 function GuardarEncuesta() {
 
@@ -7,12 +11,12 @@ function GuardarEncuesta() {
 	var formularios = document.forms;
 	var todayDate = new Date().toISOString().slice(0,10);
 	for (var i = 0; i < formularios.length; i++) {
-		alert("Total Formularios: " + formularios.length);
+		//alert("Total Formularios: " + formularios.length);
 		for (var j = 0; j < formularios[0].elements.length; j++) {
 			if (formularios[0].elements[j].name != pivote) { //Mientras la pregunta no se repita
 				//alert("i"+i + " J" +j);
 				pivote = formularios[0].elements[j].name; //Renombrar pivote
-				if(pivote == 'Nombre' || pivote == 'Nomina' || pivote == 'Area' || pivote == 'Planta'){
+				if(pivote == 'identificador' || pivote == 'Nombre' || pivote == 'Nomina' || pivote == 'Area' || pivote == 'Planta'){
 					Encuesta.push(formularios[0].elements[j].value);
 				}else if(pivote != ''){
 					//alert(pivote);
@@ -37,13 +41,12 @@ function GuardarEncuesta() {
 		Encuesta
 	}, //data to be submit
 	function (objeto, estatus) { // success callback
-		//console.log("objeto: " + objeto + "Estatus: " + estatus);
+		Reiniciar();
 	});
 }
 
 function Reiniciar() {
-	document.getElementById("Formualario").reset();
-	setTimeout("location.reload()", 1000);
+	setTimeout("location.reload()", 2000);
 }
 
 function SegundaEtapaTrue(){

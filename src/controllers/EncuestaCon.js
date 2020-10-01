@@ -18,10 +18,10 @@ Controller.GuardarEncuesta = (req, res) => {
         ];  */
  
         //(Nombre,Nomina,Planta,Pregunta1,Pregunta2,Pregunta3,Pregunta4,Pregunta5,Pregunta6,Pregunta7,Pregunta8,Pregunta9, Pregunta10)
-        conn.query('INSERT INTO encuestaiso values ?', [Object.values(data)], (err, ot) => {
+        conn.query('INSERT INTO encuestaConfor values ?', [Object.values(data)], (err, ot) => {
             if (err) {
                 res.json("Error json: " + err);
-                console.log('Error al registrar despacho de herramienta' + err);
+                console.log(err);
             }
         });
     });

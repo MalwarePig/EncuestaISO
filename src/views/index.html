@@ -25,7 +25,7 @@
   <script type="text/javascript" src="js/Encuesta.js"></script>
 </head>
 
-<body>
+<body onload="identificador()">
   <div class="container-fluid">
     <!--<div>
     <img src="images/Gemak-Mini.png" class="rounded float-left" alt="...">
@@ -49,6 +49,7 @@
           <section class="row">
             <div class="col-md-3">
               <div class="form-group">
+                <input type="text" class="form-control" id="identificador" name="identificador" maxlength="128" type="hidden">
                 <label for="Nombre">Nombre Completo: *</label>
                 <input type="text" class="form-control" id="Nombre" name="Nombre" maxlength="128" placeholder="Nombre Completo"
                   required>
