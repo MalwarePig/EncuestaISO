@@ -23,6 +23,9 @@ Controller.GuardarEncuesta = (req, res) => {
                 res.json("Error json: " + err);
                 console.log(err);
             }
+            else{
+                console.log(ot);
+            }
         });
     });
 };
