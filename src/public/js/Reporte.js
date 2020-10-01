@@ -246,7 +246,7 @@ function Tabla() {
             var newText = document.createTextNode(R57 + R58 + R59 + R60 + R61 + R62 + R63 + R64);
             Nodo.appendChild(newText);
 
-            var Dom8 = 0;
+            var Dom8 = (R57 + R58 + R59 + R60 + R61 + R62 + R63 + R64);
             Arreglo[17] = Dom8;
             var Nodo = document.getElementById("Dom8");
             var newText = document.createTextNode(Dom8);
