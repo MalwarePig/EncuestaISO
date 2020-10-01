@@ -1,7 +1,6 @@
 const Controller = {};
 //const express = require('express'); //guardar express en una variable de servidor
 
-
 //INSERT
 Controller.GuardarEncuesta = (req, res) => {
     req.getConnection((err, conn) => {
@@ -11,7 +10,7 @@ Controller.GuardarEncuesta = (req, res) => {
         const data = req.body; //TRAE TODO EL OBJETO
         console.log(Object.values(data));
         var sql = "INSERT INTO encuestaiso (name, address) VALUES ?";
-       /* var values = [
+        /* var values = [
             ['John', '123', 'Morelos', '1'],
             ['Peter', 'Lowstreet 4'],
             ['Amy', 'Apple st 652']
@@ -29,7 +28,6 @@ Controller.GuardarEncuesta = (req, res) => {
         });
     });
 };
-
 
 
 ///////// == Empleado == ////////////////////////////// == Empleado == ////////////////////////////// == Empleado == ////////////////////////// == Empleado == //////////////////// == Empleado == 
