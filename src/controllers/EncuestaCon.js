@@ -35,7 +35,7 @@ Controller.search = (req, res) => {
     req.getConnection((err, conn) => {
 
         const {Nomina} = req.params;
-        conn.query("SELECT * FROM encuestaiso WHERE Nomina = '"+Nomina+"'", (err, data) => {
+        conn.query("SELECT * FROM encuestaConfor WHERE Nomina = '"+Nomina+"'", (err, data) => {
             if (err) {
                 res.json("Error json: " + err);
                 console.log('Error de lectura');
@@ -51,7 +51,7 @@ Controller.searchPlanta = (req, res) => {
     req.getConnection((err, conn) => {
 
         const {Planta} = req.params;
-        conn.query("SELECT * FROM encuestaiso WHERE Planta = '"+Planta+"'", (err, data) => {
+        conn.query("SELECT * FROM encuestaConfor WHERE Planta = '"+Planta+"'", (err, data) => {
             if (err) {
                 res.json("Error json: " + err);
                 console.log('Error de lectura');
@@ -70,7 +70,7 @@ Controller.searchArea = (req, res) => {
         Area = Variable.split(' ')[0]; // "Area"
         Planta = Variable.split(' ')[1]; // "Fecha"
         console.log(Area + " " + Planta);
-        conn.query("SELECT * FROM encuestaiso WHERE Area = '" + Area + "' AND Planta = '" + Planta + "'", (err, data) => {
+        conn.query("SELECT * FROM encuestaConfor WHERE Area = '" + Area + "' AND Planta = '" + Planta + "'", (err, data) => {
             if (err) {
                 res.json("Error json: " + err);
                 console.log('Error de lectura');
