@@ -801,7 +801,7 @@ function CalcularExcel() {
                     dom8: Dom8,
                     CalDom8: Cal_Dom8,
                     dom9: Dom9,
-                    CalDom1: Cal_Dom9,
+                    CalDom9: Cal_Dom9,
                     dom10: Dom10,
                     CalDom10: Cal_Dom10,
                 } //objeto
@@ -819,7 +819,7 @@ function CalcularExcel() {
                     header: false
                 }
             ];
-            var result = alasql('SELECT * INTO XLSX("sample_file.xlsx",?) FROM ?', [opts, [sheet_1_data, sheet_2_data]]);
+            var result = alasql('SELECT * INTO XLSX("Reporte_Gemak.xlsx",?) FROM ?', [opts, [sheet_1_data, sheet_2_data]]);
         } //Funcion success
     }); //Ajax
 
