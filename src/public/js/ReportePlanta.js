@@ -718,7 +718,7 @@ function CalcularExcel() {
 
                 //Dominio 10
                 var Cal_Dom10 = "";
-                if (Dom9 < 6) {
+                if (Dom10 < 6) {
                     Cal_Dom10 = "Nulo o despreciable";
                 } else if ((Dom10 >= 6) && (Dom10 < 10)) {
                     Cal_Dom10 = "Bajo";
