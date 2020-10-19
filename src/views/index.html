@@ -26,44 +26,52 @@
     </section>
     <hr>
     <section>
-  
       <div class="col-md-5">
         <div class=" card card-body">
           <!--Enviar datos  del navegador al servidor  FORMULARIO -->
           <form action="/aa" method="post">
             
             <div class="form-group">
-              <input  class="form-control" type="text"  id="DatoX" name="DatoX"  placeholder="Registrar X" required>
+              <input  class="form-control" type="text"  id="DatoX" name="DatoX"  placeholder="Registrar X" required onkeypress="runScript(event,'X')">
             </div>
-            <button type="submit" class="btn btn-outline-primary" onclick="AgregarX('X')"> Agregar X</button>
-            <hr />
+            <button type="button" class="btn btn-outline-primary" onclick="Agregar('X')"> Agregar X</button>
+            <hr/>
             <div class="form-group">
-              <input  class="form-control" type="text"  id="DatoY" name="DatoY"  placeholder="Registrar y" required>
+              <input  class="form-control" type="text"  id="DatoY" name="DatoY"  placeholder="Registrar y" required onkeypress="runScript(event,'Y')">
             </div>
-            <button type="submit" class="btn btn-outline-primary" onclick="Agregar('Y')"> Agregar Y</button>
+            <button type="button" class="btn btn-outline-primary" onclick="Agregar('Y')"> Agregar Y</button>
           </form>
         </div>
       </div>
-
     </section>
+    <br>
     <hr />
     <div class="contenedor-anuncios articulo">
       <!--==== Lista ====-->
       <div class="textos-header">
-        <p>Lista: <span id="Lista"></span></p>
+        <p>Lista-X: <span id="ListaX"></span></p>
+      </div>
+      <div class="textos-header">
+        <p>Lista-Y: <span id="ListaY"></span></p>
       </div>
       <br /><br />
       <!--==== Media ====-->
       <div class="textos-header">
-        <p>Media: <span id="Media"></span></p>
+        <p>Media-X: <span id="MediaX"></span></p>
+      </div>
+      <div class="textos-header">
+        <p>Media-Y: <span id="MediaY"></span></p>
       </div>
       <br /><br />
       <!--==== Desviacion estandar ====-->
       <div class="textos-header">
-        <p>Desviación estandar: <span id="Desviacion"></span></p>
+        <p>Desviación estandar X: <span id="DesviacionX"></span></p>
+      </div>
+      <div class="textos-header">
+        <p>Desviación estandar Y: <span id="DesviacionY"></span></p>
       </div>
     </div>
-    <br /><br />
+    <br />
     <!--==== Button ====-->
     <div class="form-row text-center">
       <div class="col-12">
@@ -71,5 +79,60 @@
       </div>
     </div>
   </div>
+<br>
+  <div class="card-body">
+    <div class="container-fluid shadow-lg p-3 mb-5 bg-white rounded">
+      <table class="table table-condensed table-hover" id="Datos">
+          <thead class="thead-dark">
+            <tr>
+              <th>X</th>
+              <th>Y</th>
+              <th>X*Y</th>
+              <th>X^2</th>
+              <th>Y^2</th>
+            </tr>
+          </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <br><br>
+      <hr />
+      <button type="button" class="btn btn-secondary" onclick="CalcularTabla()" data-target="#exampleModal" data-toggle="modal">CalcularTabla</button>
+    </div>
+  </div>
+
+  <br>
+  <section>
+    <div class="col-md-5">
+      <div class=" card card-body">
+        <!--Enviar datos  del navegador al servidor  FORMULARIO -->
+        <div class="form-group">
+          <label for="inputAddress" class="font-weight-bold">B_1</label>
+          <input  class="form-control" type="text"  id="B1" name="B1"  placeholder="B1">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress" class="font-weight-bold">R_1</label>
+          <input  class="form-control" type="text"  id="R1" name="R1"  placeholder="R1">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress" class="font-weight-bold">R_1^2</label>
+          <input  class="form-control" type="text"  id="R1_2" name="R1_2"  placeholder="R1">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress" class="font-weight-bold">B_0</label>
+          <input  class="form-control" type="text"  id="B0" name="B0"  placeholder="B1">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress" class="font-weight-bold">RL</label>
+          <input  class="form-control" type="text"  id="RL" name="RL"  placeholder="RL">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+ 
+
 </body>
 </html>
