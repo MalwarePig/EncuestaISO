@@ -34,8 +34,14 @@ Controller.GuardarEncuesta = (req, res) => {
 Controller.search = (req, res) => {
     req.getConnection((err, conn) => {
 
-        const {Nomina} = req.params;
-        conn.query("SELECT * FROM encuestaConfor WHERE Nomina = '"+Nomina+"'", (err, data) => {
+        const {args} = req.params;
+
+        var Nomina = args.split('|')[0]; // Fecha inicial
+        var Planta = args.split('|')[1]; // Fecha limite
+
+        console.log("Nom: " +Nomina+ " Planta :" +Planta)
+
+        conn.query("SELECT * FROM encuestaConfor WHERE Nomina = '"+Nomina+"' and Planta = '"+Planta+"'", (err, data) => {
             if (err) {
                 res.json("Error json: " + err);
                 console.log('Error de lectura');

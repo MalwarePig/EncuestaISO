@@ -2,7 +2,7 @@ const Arreglo = [];
 //=========================================== BUSCAR TRABAJADORES POR NUMERO DE NOMINA =================================================//
 function Tabla() {
     $.ajax({
-        url: '/Empleado/' + document.getElementById("NumeroNomina").value + '',
+        url: '/Empleado/' + document.getElementById("NumeroNomina").value + '|' + document.getElementById("PlantaSelect").value,
         success: function (data) {
             var Nombre = data[0].Nombre;
             Arreglo.push(Nombre);

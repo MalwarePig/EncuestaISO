@@ -24,7 +24,7 @@ router.get('/Planta', (req, res) => {
 
 
 router.post('/GuardarEncuesta', EncuestaController.GuardarEncuesta);
-router.get('/Empleado/:Nomina', EncuestaController.search);
+router.get('/Empleado/:args', EncuestaController.search);
 router.get('/RPlanta/:Planta', EncuestaController.searchPlanta);
 router.get('/RArea/:Variable', EncuestaController.searchArea);
 //router.get('/BuscarHerramientas/:Herra', AlmacenController.search);
