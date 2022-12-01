@@ -10,7 +10,7 @@
 > heroku git:remote -a encuesta-gemak //Seleccionar el espacio de heroku donde se debe subir
 > git commit -m "Mensaje de referencia" //comando para subir al servidor
 > git push heroku master //Inicia la subida de archivos a servidor
-> heroku open //Iniciar aplicacion
+ //Iniciar aplicacion
 
 **************************** LINKS **********************************
 
