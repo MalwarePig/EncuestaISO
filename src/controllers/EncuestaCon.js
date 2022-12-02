@@ -9,7 +9,7 @@ Controller.GuardarEncuesta = (req, res) => {
         }
         const data = req.body; //TRAE TODO EL OBJETO
         console.log(Object.values(data));
-        var sql = "INSERT INTO encuestaiso (name, address) VALUES ?";
+        //var sql = "INSERT INTO encuestaiso (name, address) VALUES ?";
         /* var values = [
             ['John', '123', 'Morelos', '1'],
             ['Peter', 'Lowstreet 4'],
@@ -17,6 +17,8 @@ Controller.GuardarEncuesta = (req, res) => {
         ];  */
  
         //(Nombre,Nomina,Planta,Pregunta1,Pregunta2,Pregunta3,Pregunta4,Pregunta5,Pregunta6,Pregunta7,Pregunta8,Pregunta9, Pregunta10)
+        console.log("objeto enviado")
+        console.log(Object.values(data))
         conn.query('INSERT INTO encuestaConfor values ?', [Object.values(data)], (err, ot) => {
             if (err) {
                 res.json("Error json: " + err);
