@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');//ver las peticiones
 const app = express();//servidor
 const path = require('path');//Traba con directorios identificando el SO // \\
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const myConnection = require('express-myconnection');
 const session = require('express-session');
 
@@ -16,22 +16,22 @@ app.set('view engine', 'ejs');//motor de plantillas, permite ejecutar javascript
 //middlewares //Funciones que se ejecutan antes que lleguen a las rutas
 app.use(express.json());//Acceder a la informacion de jason
 app.use(morgan('dev'));//muestra los mensajes en consola de las cargas y peticiones
-app.use(myConnection(mysql, {
+/* app.use(myConnection(mysql, {
      host: 'bpui8m1t3pulemi4dlfv-mysql.services.clever-cloud.com',  // host:'localhost',
      user: 'u7xoomeqcazzaq57',  // user: 'root',
      password: 'nciIFmnLngqjuKcoB5LW', // password: 'Soporte1702861',
      port: 3306,
      database: 'bpui8m1t3pulemi4dlfv'   //database: 'encuestaiso'
-}, 'single'))
+}, 'single')) */
 
-/* app.use(myConnection(mysql, {
+app.use(myConnection(mysql, {
      host: 'containers-us-west-100.railway.app',  // host:'localhost',
      user: 'root',  // user: 'root',
      password: 'SWGneeBDeiUke86E6mM9', // password: 'Soporte1702861',
      port: 5698,
      database: 'railway'   //database: 'encuestaiso'
 }))
- */
+
 app.use(session({
      secret: 'keyboard cat',
      resave: false,
