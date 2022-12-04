@@ -1,16 +1,17 @@
 body {
 font-family : 'Lato', sans-serif;
-background : rgb(0, 0, 0);
-color: #00C8E0;
+background : #181622;
+color: #00cae0ab;
 }
-body p {
-color : #ffffff;
+
+p {
+color : #95949f;
 font-family : "Lato", sans-serif;
 font-size : 14px;
 letter-spacing : 1px;
 }
-body h2, h3, h4, h5, h6 {
-color : #141414;
+h2, h3, h4, h5, h6 {
+color : #95949f;
 font-family : "Lato", sans-serif;
 font-size : 18px;
 text-transform : capitalize;
@@ -19,7 +20,7 @@ text-transform : uppercase;
 }
 
 h1 {
-  color : #f0f0f0;
+  color : #ffffff;
   font-family : "Lato", sans-serif;
   font-size : 18px;
   text-transform : capitalize;
@@ -27,12 +28,9 @@ h1 {
   text-transform : uppercase;
 }
 
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-input{
-  margin: 2% 2% 0% 2%;
-  padding: 1% 2%;
-  background-color: #afacac;
-}
+ 
 
 #lblForm{
   padding: 0% 0% 0% 1%;
