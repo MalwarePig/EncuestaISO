@@ -22,7 +22,8 @@
   <!--<link rel="icon" type="image/ico" href="/src/public/icon/Gemak.ico" />-->
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-  <script type="text/javascript" src="js/Encuesta.js"></script>
+  <!-- <script type="text/javascript" src="js/Encuesta.js"></script> -->
+  <script type="text/javascript" src="js/EncuestaUpdate.js"></script>
 </head>
 
 <body onload="identificador()">
@@ -41,7 +42,7 @@
       </div>
     </section>
     <hr>
-    <form action="" id="Formualario">
+    <div id="Formualario">
       <section class="row">
         <section class="col-md-12">
           <section class="row">
@@ -49,7 +50,8 @@
           <section class="row">
             <div class="col-md-3">
               <div class="form-group">
-                <input type="text" class="form-control" id="identificador" name="identificador" maxlength="128" type="hidden">
+                <label for="identificador">Identificador: *</label>
+                <input type="text" class="form-control" id="identificador" readonly name="identificador" maxlength="128" type="hidden">
                 <label for="Nombre">Nombre Completo: *</label>
                 <input type="text" class="form-control" id="Nombre" name="Nombre" maxlength="128" placeholder="Nombre Completo"
                   required>
@@ -2522,7 +2524,7 @@
     <!--==== Button ====-->
     <div class="form-row text-center">
       <div class="col-12">
-        <button type="submit" class="btn btn-secondary" onclick="GuardarEncuesta()">Guardar</button>
+        <button class="btn btn-secondary" onclick="GuardarEncuesta()">Guardar</button>
       </div>
     </div>
   

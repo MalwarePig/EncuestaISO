@@ -25,6 +25,7 @@ Controller.GuardarEncuesta = (req, res) => {
                 console.log(err);
             }
             else{
+                res.json(true);
                 console.log(ot);
             }
         });
