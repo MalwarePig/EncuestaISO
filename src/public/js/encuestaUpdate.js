@@ -32,31 +32,36 @@ function GuardarEncuesta() {
 				/* console.log("Pregunta: "+campo +  "-5 " + index + " z: " + z)
 				console.log(document.getElementsByName(campo+index + "-5")[z].checked) */
 				if (document.getElementsByName(campo + index + "-5")[z].checked) {
-					let respuesta = document.getElementsByName(campo + index + "-5")[z].value;
+					let respuesta = document.getElementsByName(campo + index + "-5")[z].value || 0;
 					Encuesta.push(respuesta)
 				}
 			}
 		}
 	}
- 
-	Encuesta.push(todayDate); //lanza la fecha al final
+
+	Encuesta.push(todayDate); //lanza la fecha al final 
 	//=========================================== Guardar =================================================//
-	$.post("/GuardarEncuesta",{ // url
-		Encuesta
-	}, //data to be submit
-	function (objeto, estatus) { // success callback
-		if(true){
-			console.log(objeto,estatus)
-			alert("Registro completo!")
-			Reiniciar();
-		}else{
-			alert("Sucedio un error!")
-		}
-		
-	});
+	if (Encuesta.length >= 80) {
+		alert("guardando: "+Encuesta.length)
+		$.post("/GuardarEncuesta", { // url
+			Encuesta
+		}, //data to be submit
+			function (objeto, estatus) { // success callback
+				if (true) {
+					console.log(objeto, estatus)
+					alert("Registro completo!")
+					Reiniciar();
+				} else {
+					alert("Sucedio un error!")
+				}
+			});
+	}else{
+		alert("Falta campos por llenar: " + +Encuesta.length +" de 80");
+	}
 }
 
-function Reiniciar() { 
+
+function Reiniciar() {
 	window.location.href = "https://encuestaiso-production.up.railway.app/";
 }
 
