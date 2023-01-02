@@ -27,7 +27,7 @@ app.use(morgan('dev'));//muestra los mensajes en consola de las cargas y peticio
 app.use(myConnection(mysql, {
      host: 'containers-us-west-100.railway.app',  // host:'localhost',
      user: 'root',  // user: 'root',
-     password: 'SWGneeBDeiUke86E6mM9', // password: 'Soporte1702861',
+     password: 'qymmyK0aOEDq3m42bHqH', // password: 'Soporte1702861',
      port: 5698,
      database: 'railway'   //database: 'encuestaiso'
 }))
